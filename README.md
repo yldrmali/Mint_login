@@ -5,7 +5,7 @@ Mint_login is part of a The Odin Project course. Client side valiation has been 
 
 ## Live Preview
 
-[mint_login](https://yldrmali.github.io/mint_login/)
+[mint_login](https://yldrmali.github.io/Mint_login/)
 
 ## License
 
