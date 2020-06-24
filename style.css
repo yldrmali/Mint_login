@@ -1,0 +1,286 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: #eceef1;
+}
+
+/* top-most sign-in bar */
+.top-sign-in {
+	background-color: #eceef1;
+	height: 60px;
+	width: 100%;
+}
+.top-text {
+	float: right;
+	height: 100%;
+	font-size: 12px;
+	padding-top: 13px;
+	color: rgba(109, 84, 90, 1)
+}
+
+.top-text a {
+	text-decoration: none;
+	color: rgba(51, 122, 202, 1)
+}
+
+.top-sign-in button {
+	float: right;
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-top: -17px;
+	border-radius: 4px;
+	border: 1px solid black;
+	height: 34px;
+	width: 100px;
+	cursor: pointer;
+	background-color: #0077c5;
+	color: white;
+}
+
+/* middle column */
+.middle-column {
+	background-color: #eceef1;
+	width: 400px;
+	margin: auto;
+
+}
+
+.middle-column > * {
+	width: 100%;
+}
+/* header */
+header {
+	background-color: #eceef1;
+	height: 35px;
+	margin-top: 10px;
+}
+
+.logo {
+	width: 119px;
+	margin: auto;
+}
+
+header img {
+	height: 35px;
+}
+
+/* bar with links to company branches */
+.company-links {
+	background-color: #eceef1;
+	height: 40px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.company-links img {
+	cursor: pointer;
+	padding-top: 2px;
+}
+
+/* the center form */
+.sign-up-form a:hover {
+	text-decoration: underline;
+}
+
+.sign-up-form {
+	background-color: white;
+	border: 1px solid #C1C5C8;
+	margin-top: 15px;
+
+}
+
+.sign-up-info {
+	background-color: white;
+	height: 80px;
+	text-align: center;
+	padding-top: 20px;
+	}
+
+.sign-up-info p, h1 {
+	margin: 0;
+	padding: 0;
+	color: #4C4C4C;
+}
+
+.sign-up-info h1 {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.sign-up-info p {
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.sign-up-info a {
+	text-decoration: none;
+	font-size: 11px;
+	color: #0077C5;
+}
+
+
+
+/* the actual form itself */
+.sign-up-form form {
+	background-color: white;
+	text-align: left;
+}
+
+.sign-up-form form div{
+	position: relative;
+}
+
+.sign-up-form form div i{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	visibility: visible;
+}
+
+.sign-up-form form div small#value-email,.sign-up-form form div i.fas{
+	visibility: hidden;
+}
+
+.sign-up-form form i.fas.fa-lock-open{
+	transform: rotateY(180deg);
+}
+
+.sign-up-form form fieldset.password-error{
+	display: block;
+	border: none;
+	margin-left: 0;
+	padding:3px 0 0 0
+}
+.sign-up-form form fieldset.password-error small{
+	display: block;
+	color: rgb(247, 74, 74);
+}
+#phone-info {
+	font-size: 11px;
+	color: #444;
+}
+form div {
+	margin-bottom: 30px;
+	margin-right: 35px;
+	margin-left: 35px;
+	margin-top: 10px;
+}
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input {
+	width: 100%;
+	height: 34px;
+	border: 1px solid #C1C5C8;
+	border-radius: 3px;
+	padding-left: 10px;
+}
+
+input:focus {
+	border: 1px solid #52A8EC;
+	outline: 0;
+	border-color: rgba(82,168,236,.8);
+	box-shadow: 0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(82,168,236,.6) 
+}
+
+.button {
+	text-align: center;
+}
+
+.button button {
+	background: #0077C5;
+	border: #0077C5;
+	color: white;
+	width: 318px;
+	height: 44px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.75);
+}
+.terms-privacy-text {
+	background-color: white;
+	height: 100px;
+	text-align: center;
+	font-size: 12px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-style: italic;
+	color: #757575;
+	margin-top: 25px;
+}
+
+.terms-privacy-text a {
+	text-decoration: none;
+	color: #0077C5;
+}
+
+.recaptcha-text {
+	background-color: #ECEEF1;
+	height: 40px;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 15px;
+	color: #8d9096;
+}
+
+.recaptcha-text a {
+	text-decoration: none;
+	color: #0077C5;
+}
+section.sign-up-form form div i.fas.fa-lock-open,section.sign-up-form form div i.fas.fa-lock{
+	visibility: hidden;
+}
+
+
+
+section.sign-up-form fieldset.password-error ,section.sign-up-form form div.re-password{
+	max-height: 0;
+	opacity: 0;
+	transition: max-height 1s ease-out;
+}
+
+section.sign-up-form fieldset.password-error.active ,section.sign-up-form form div.re-password.active{
+	max-height: 300px;
+	opacity: 1;
+}
+
+small#value-repassword{
+	visibility: hidden;
+}
+
+
+/* footer */
+footer {
+	background-color: #eceef1;
+	width: 100%;
+	height: 80px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 12px;
+	color: #505050;
+}
+
+.footer-links ul {
+	list-style: none;
+	padding-inline-start: 0;
+} 
+
+.footer-links li {
+	display: inline;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: #505050;
+}
